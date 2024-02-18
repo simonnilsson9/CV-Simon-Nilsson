@@ -92,13 +92,11 @@ section {
 }
 
 .section-text-p1 {
-  text-align: center;
-}
-
-.section-text-p1 {
   font-size: 24px;
   margin-bottom: 16px;
   color: rgb(53, 53, 53);
+  text-align: center;
+  padding-top: 5%;
 }
 .section-text-p2 {
   font-size: 24px;
@@ -172,11 +170,6 @@ section {
 
 /*ABOUT*/
 
-.section--text-p1{
-    padding-top: 3%;   
-    padding-bottom: 1%; 
-    text-align: center;
-}
 .title-about {
     font-size: 48px;
     text-align: center;
@@ -223,3 +216,26 @@ section {
     margin: auto 0;
 }
 
+/* Portfolio */
+
+.color-container{
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img{
+  border-radius: 32px;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title{
+ margin: 16px;
+ color: black;
+ text-align: center;
+}
+
+.project-btn{
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
