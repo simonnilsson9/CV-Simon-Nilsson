@@ -163,19 +163,19 @@ section {
 }
 
 footer {
-  background-color: #333;
-  color: white;
   text-align: center;
   padding: 10px 0;
   position: relative;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
   margin-top: auto;
 }
 
 footer p {
-  color: white;
+  position: relative;
+  color: black;
   text-align: center;
+  
 }
 
 /*ABOUT*/
@@ -249,6 +249,25 @@ footer p {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+
+dialog {
+   display: block; 
+}
+
+dialog:not(:target):not([open]) { 
+  display: none; 
+}
+
+dialog{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  text-align: center;
+  width: 25rem;
+  box-shadow: 0 0 15px black;
 }
 
 /* Contact */
@@ -369,9 +388,9 @@ footer p {
     margin: 0 auto 2rem;
   }
   .navbar {
-    align-items: right;
-    display: flex;
     flex-direction: column;
+    display: flex;
+    gap: 0.2rem;
   }
 
   #CV,
@@ -403,18 +422,28 @@ footer p {
   .about-containers {
     margin-top: 20%;
   }
+  footer {
+    width: 100%;
+    text-align: center;
+    margin-bottom: auto;
+    padding-top: 20%;
+  }
 
 }
 
 @media screen and (max-width: 700px) {
   #contact,
   footer {
-    height: 40vh;
-    margin-bottom: 0;
+    text-align: center;
+    margin-bottom: auto;
+    padding-top: 40%;
   }
-
+.header{
+  display: block;
+  justify-items: center;
+}
   #profile {
-    margin-top: 20%;
+    margin-top: 25%;
     height: 83vh;
     margin-bottom: 0;
   }
@@ -425,24 +454,28 @@ footer p {
 
   footer {
     height: fit-content;
-    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
   }
 
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .contact-info-container {
     margin: 0;
+    flex-wrap: wrap;
   }
   #contact {
     margin-top: auto;
   }
 
   #CV{
-    margin-top: 20%;
+    margin-top: 25%;
   }
 
   #projects{
@@ -450,6 +483,7 @@ footer p {
   }
   .contact-info-container p,
   .navbar a {
+    flex-wrap: wrap;
     font-size: 1rem;
   }
 
@@ -474,7 +508,7 @@ footer p {
   .section-pic-container {
     width: 275px;
     height: 275px;
-    margin: 0 auto 2rem;
+    margin: 0 auto 3%;
   }
 
   .section-text-p2 {
@@ -492,3 +526,5 @@ footer p {
     margin-top: 65%;
   }
 }
+
+

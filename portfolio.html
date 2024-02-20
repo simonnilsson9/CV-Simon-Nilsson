@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    />
     <link rel="stylesheet" href="CSS/style.css" />
-    
   </head>
   <body>
     <header class="header">
@@ -21,6 +23,30 @@
         <a href="contact.html">Contact</a>
       </nav>
     </header>
+    <dialog id="dialog">
+      <h2>Project One</h2>
+      <p>
+        My first project where I coded a "mini" bank. You could transfer,
+        withdraw and take loans.
+      </p>
+      <a href="#!">Close</a>
+    </dialog>
+    <dialog id="dialog2">
+      <h2>Project Two</h2>
+      <p>
+        Our first group-project. We used OOP and created a more developed
+        bank-application named Sharp Shooters Bank.
+      </p>
+      <a href="#!">Close</a>
+    </dialog>
+    <dialog id="dialog3">
+      <h2>Project Three</h2>
+      <p>
+        My first database project which involved setting up a database for a
+        school.
+      </p>
+      <a href="#!">Close</a>
+    </dialog>
     <section id="projects">
       <p class="section-text-p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
@@ -42,7 +68,11 @@
               >
                 <button class="btn btn-color2 project-btn">Github</button></a
               >
-              <button class="btn btn-color2 project-btn">More Info</button>
+              <a href="#dialog">
+                <button type="button" class="btn btn-color2 project-btn">
+                  More Info
+                </button></a
+              >
             </div>
           </div>
           <div class="details-container color-container">
@@ -61,7 +91,11 @@
               >
                 <button class="btn btn-color2 project-btn">Github</button></a
               >
-              <button class="btn btn-color2 project-btn">More Info</button>
+              <a href="#dialog2">
+                <button type="button" class="btn btn-color2 project-btn">
+                  More Info
+                </button></a
+              >
             </div>
           </div>
           <div class="details-container color-container">
@@ -80,7 +114,11 @@
               >
                 <button class="btn btn-color2 project-btn">Github</button></a
               >
-              <button class="btn btn-color2 project-btn">More Info</button>
+              <a href="#dialog3">
+                <button type="button" class="btn btn-color2 project-btn">
+                  More Info
+                </button></a
+              >
             </div>
           </div>
         </div>
@@ -91,6 +129,6 @@
         &copy; 2024 Campus Varberg; Designed by
         <span class="designer">Simon Nilsson</span>
       </p>
-  </footer>
+    </footer>
   </body>
 </html>
