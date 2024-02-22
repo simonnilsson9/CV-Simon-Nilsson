@@ -335,13 +335,14 @@ dialog .btn{
 }
 
 /*CV*/
-#CV {
+#CV{
   max-width: 50rem;
   max-height: 37.5rem;
   margin: 4.7rem auto;
   padding: 1.25rem;
 }
-.CV-details-container {
+
+.CV-details-container, .web-details-containers {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -353,12 +354,12 @@ dialog .btn{
   border-color: rgb(163, 163, 163);
 }
 
-.CV-details-container h2 {
+.CV-details-container h2, .web-details-containers h2 {
   text-align: center;
   padding-bottom: 0.9rem;
 }
 
-.CV-details-container ul {
+.CV-details-container ul, .web-details-containers ul{
   text-align: center;
   list-style: none;
   display: flex;
@@ -372,6 +373,10 @@ dialog .btn{
   border-radius: 0.3rem;
   padding: 0.3rem 0.6rem;
   margin: 0 0.6rem 0.6rem 0;
+}
+
+.web-details-containers li{
+  margin-bottom: 0.9rem;
 }
 
 @media screen and (max-width: 1400px) {
