@@ -251,28 +251,53 @@ footer p {
   border-color: rgb(163, 163, 163);
 }
 
-dialog {
+.modal {
+  display: none; 
+  position: fixed; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1; 
+}
+
+.modal:target {
   display: block;
 }
 
-dialog:not(:target):not([open]) {
-  display: none;
+.modal h2{
+  text-align: center;
+  margin-bottom: 2%;
 }
 
-dialog {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 30px;
+.modal p{
   text-align: center;
-  width: 25rem;
-  height: 15rem;
-  box-shadow: 0 0 15px black;
-  border-radius: 1rem;
 }
-dialog .btn{
-  margin-top: 5%;
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 20% auto; 
+  padding: 30px;
+  border: 1px solid #888;
+  width: 80%; 
+  max-width: 600px; 
+  border-radius: 20px;
+}
+
+/* Stil för stängknappen */
+.close-button {
+  float: right; /* Positionera knappen till höger */
+  font-size: 28px; /* Storleken på stängsymbolen */
+  font-weight: bold;
+  color: black;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: cadetblue;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* Contact */

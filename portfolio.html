@@ -24,40 +24,31 @@
         <a href="WCAGA+AA.html">Guidelines</a>
       </nav>
     </header>
-    <dialog id="dialog">
-      <h2>Project One</h2>
-      <p>
-        My first project where I coded a "mini" bank. You could transfer,
-        withdraw and take loans.
-      </p>
-      <a href="#!"
-        ><button type="button" class="btn btn-color2 project-btn">
-          Close
-        </button></a>
-    </dialog>
-    <dialog id="dialog2">
-      <h2>Project Two</h2>
-      <p>
-        Our first group-project. We used OOP and created a more developed
-        bank-application named Sharp Shooters Bank.
-      </p>
-      <a href="#!"
-        ><button type="button" class="btn btn-color2 project-btn">
-          Close
-        </button></a>
-    </dialog>
-    <dialog id="dialog3">
-      <h2>Project Three</h2>
-      <p>
-        My first database project which involved setting up a database for a
-        school.
-      </p>
-      <a href="#!"
-        ><button type="button" class="btn btn-color2 project-btn">
-          Close
-        </button></a
-      >
-    </dialog>
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <a href="#" class="close-button">&#10006;</a>
+        <h2>Project One</h2>
+        <p>My first project where I coded a "mini" bank. You could transfer,
+          withdraw and take loans.</p>
+      </div>
+    </div>
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <a href="#" class="close-button">&#10006;</a>
+        <h2>Project Two</h2>
+        <p>Our first group-project. We used OOP and created a more developed
+          bank-application named Sharp Shooters Bank.</p>
+      </div>
+    </div>
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <a href="#" class="close-button">&#10006;</a>
+        <h2>Project Three</h2>
+        <p>My first database project which involved setting up a database for a
+          school.</p>
+      </div>
+    </div>
+
     <section id="projects">
       <p class="section-text-p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
@@ -79,7 +70,7 @@
               >
                 <button class="btn btn-color2 project-btn">Github</button></a
               >
-              <a href="#dialog">
+              <a href="#modal1">
                 <button type="button" class="btn btn-color2 project-btn">
                   More Info
                 </button></a
@@ -102,7 +93,7 @@
               >
                 <button class="btn btn-color2 project-btn">Github</button></a
               >
-              <a href="#dialog2">
+              <a href="#modal2">
                 <button type="button" class="btn btn-color2 project-btn">
                   More Info
                 </button></a
@@ -125,7 +116,7 @@
               >
                 <button class="btn btn-color2 project-btn">Github</button></a
               >
-              <a href="#dialog3">
+              <a href="#modal3">
                 <button type="button" class="btn btn-color2 project-btn">
                   More Info
                 </button></a
